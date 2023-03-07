@@ -1,4 +1,4 @@
-Portfolio being developed with Next.Js, acess:#
+Portfolio being developed with Next.Js, see:#
 
 ## Tasks
 
