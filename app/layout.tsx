@@ -4,7 +4,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './assets/scss/globals.scss';
+import './global.scss';
 
 const nunito = Nunito({ subsets: ['latin'] });
 

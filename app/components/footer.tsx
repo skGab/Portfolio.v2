@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <section id='footer' className='mt-auto'>
+        <footer id='footer' className='mt-auto'>
             <div className="container px-4">
                 <div className="row">
                     <div className="col text-center">
@@ -13,6 +13,6 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-        </section>
+        </footer>
     )
 }

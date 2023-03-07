@@ -6,7 +6,7 @@ import React from 'react'
 
 export default function Header() {
     return (
-        <section id='header'>
+        <header id='header'>
             <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="container">
                     <a className="navbar-brand fw-bold text-white" href="/">gabriel assunção</a>
@@ -28,6 +28,6 @@ export default function Header() {
                     </div>
                 </div>
             </nav>
-        </section>
+        </header>
     )
 }
