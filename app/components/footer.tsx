@@ -6,7 +6,7 @@ import React from 'react'
 export default function Footer() {
     return (
         <footer id='footer' className='mt-auto'>
-            <div className="container px-4">
+            <div className="container px-4 pb-5">
                 <div className="row">
                     <div className="col text-center">
                         <h3 className='small mb-0'>© 2023 gabriel assunção. todos os direitos rezervados.</h3>

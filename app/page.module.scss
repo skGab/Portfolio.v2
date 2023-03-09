@@ -1,7 +1,85 @@
-.bg {
-    background-color: #313134;
-    width: 100%;
-    padding: 1rem 0;
-    border-radius: .5rem;
-    font-size: 1rem;
+// #tree3D {
+//     // background-color: rgba(255, 0, 234, 0.068);
+// }
+
+#about {
+    .bg {
+        background-color: var(--dark);
+        width: 100%;
+        padding: 1rem 0;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-weight: 400;
+    }
+
+    .work {
+        margin-bottom: 3rem;
+
+        h2 {
+            width: fit-content;
+            font-weight: bold;
+
+            span {
+                height: 5px;
+                width: 100%;
+                border-radius: 50px;
+                background-color: #20202380;
+                margin-top: 0.1rem;
+            }
+        }
+
+        p {
+            text-indent: 1rem;
+            text-align: justify;
+        }
+    }
+
+    .love {
+        margin-bottom: 3rem;
+
+        h2 {
+            width: fit-content;
+            font-weight: bold;
+
+            span {
+                height: 5px;
+                width: 100%;
+                border-radius: 50px;
+                background-color: #20202380;
+                margin-top: 0.1rem;
+            }
+        }
+    }
+
+    .social {
+        h2 {
+            width: fit-content;
+            font-weight: bold;
+
+            span {
+                height: 5px;
+                width: 100%;
+                border-radius: 50px;
+                background-color: #20202380;
+                margin-top: 0.1rem;
+            }
+        }
+    }
+
+    .hover {
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+
+        transition: background 0.2s ease-in;
+    }
+
+    .hover:hover {
+        background: #f0830621;
+    }
 }

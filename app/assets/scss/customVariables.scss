@@ -1,0 +1,13 @@
+.text-secondary {
+    color: var(--link) !important;
+}
+
+.text-white {
+    color: var(--white);
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 768px;
+    }
+}
