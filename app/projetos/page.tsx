@@ -1,29 +1,54 @@
-import React from 'react'
-// import Image from 'next/image';
-// import styles from './page.module.scss';
+/* eslint-disable no-console */
 
-export default function Home() {
+import React from 'react';
+import { Octokit } from '@octokit/rest';
+import Projects from '../components/projects/projects';
+import styles from './page.module.scss';
+
+
+async function getRepositories() {
+  try {
+    const octokit = new Octokit({
+      auth: `token ${process.env.GITHUB_ACCESS}`,
+    });
+
+    const { data: repositories } = await octokit.repos.listForAuthenticatedUser();
+
+    return repositories
+
+  } catch (error) {
+    console.log(error);
+
+    return []
+  }
+};
+
+async function Home() {
+
+  const repositories = await getRepositories();
+
   return (
     <>
-      <section id='3dtree' className='py-5'>
+      <section id="tree3D" className="py-5">
         <div className="container px-4 py-5">
           <div className="row">
             <div className="col text-center">
-              <h1 className='small'>arvore 3d rodando (PAGINA PROJETOS)</h1>
+              <h1 className="small">Arvore 3d rodando</h1>
             </div>
           </div>
         </div>
       </section>
 
-      <section id='about' className='py-5'>
-        <div className="container px-4 py-5">
-          <div className="row">
-            <div className="col">
-              <h2>PROJETOS</h2>
-            </div>
-          </div>
+      <section id={styles.projects} className="py-5">
+        <div className="container px-4">
+
+          <Projects repositories={repositories} />
+
         </div>
       </section>
     </>
-  )
+  );
 }
+
+
+export default Home;

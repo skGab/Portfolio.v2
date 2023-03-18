@@ -81,15 +81,18 @@ body {
     @import './assets/scss/customVariables.scss';
 }
 
-header > nav {
-    background-color: var(--dark);
+header {
+    nav {
+        background-color: var(--dark);
+        backdrop-filter: blur(10px);
 
-    a {
-        text-decoration: none;
-        color: var(--white) !important;
-    }
+        a {
+            text-decoration: none;
+            color: var(--white) !important;
+        }
 
-    a:hover {
-        text-decoration: none;
+        .navbar-brand:hover {
+            text-decoration: none;
+        }
     }
 }

@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
+
 import React from 'react'
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
 
 import styles from './page.module.scss';
@@ -39,7 +40,7 @@ export default function Home() {
                 </div>
 
                 <figure>
-                  <Image src="" alt="#" />
+                  {/* <Image src="" alt="#" /> */}
                 </figure>
               </div>
 

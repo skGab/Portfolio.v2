@@ -5,11 +5,10 @@ Portfolio being developed with Next.Js, see:#
 ```bash
 [ x ] Built homePage
 [ x ] Costumize scroll
-[   ] fixed header
+[ x ] fixed header
 [   ] 3D tree
 [   ] light and dark theme
 [   ] profile picture
 [   ] projects from github
-
 ```
 

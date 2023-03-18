@@ -6,7 +6,7 @@
         "prettier"
     ],
     "parserOptions": {
-        "project": "tsconfig.json"
+        "project": ["./tsconfig.json", "./next.config.js"]
     },
     "rules": {
         "@next/next/no-html-link-for-pages": "off"

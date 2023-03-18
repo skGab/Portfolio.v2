@@ -6,7 +6,7 @@ import React from 'react'
 
 export default function Header() {
     return (
-        <header id='header'>
+        <header id='header' className='sticky-top'>
             <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="container">
                     <a className="navbar-brand fw-bold" href="/">gabriel assunção</a>

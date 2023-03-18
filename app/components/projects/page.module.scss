@@ -1,0 +1,17 @@
+.project {
+    margin: 0;
+    max-width: 250px;
+    text-align: center;
+
+    img {
+        border-radius: 12px;
+        mask: var(--m);
+        filter: grayscale(0.5);
+        transition: 0.3s linear;
+    }
+    img:hover {
+        -webkit-mask-position: 7.5% 50%, 92.5% 50%;
+        mask-position: 7.5% 50%, 92.5% 50%;
+        filter: grayscale(0);
+    }
+}
