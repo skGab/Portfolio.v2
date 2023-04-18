@@ -1,7 +1,7 @@
 :root {
     --white: rgba(255, 255, 255, 0.849);
-    --dark: #20202380;
-    --body: #121212;
+    --dark: #17171848;
+    --body: #1d1d1d;
 
     --link: #ff9900;
 }
@@ -53,9 +53,13 @@ html {
     }
 }
 
+html,
 body {
-    color: var(--white);
-    background: var(--body);
+    background-color: var(--body) !important;
+    color: var(--white)!important;
+}
+
+body {
     min-height: 100vh;
     overflow-x: hidden;
 

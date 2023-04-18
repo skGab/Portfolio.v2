@@ -9,6 +9,10 @@ Portfolio being developed with Next.Js, see:#
 [   ] 3D tree
 [   ] light and dark theme
 [   ] profile picture
-[   ] projects from github
+[ x ] projects from github
+[   ] Header animation
+[   ] Switch page animation
+[   ] Bio Content
+[   ] Projects thumbs
 ```
 

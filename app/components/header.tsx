@@ -9,7 +9,7 @@ export default function Header() {
         <header id='header' className='sticky-top'>
             <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="container">
-                    <a className="navbar-brand fw-bold" href="/">gabriel assunção</a>
+                    <Link className="navbar-brand fw-bold" href="/">gabriel assunção</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" />
                     </button>

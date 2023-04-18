@@ -1,32 +1,11 @@
-/* eslint-disable no-console */
-
 import React from 'react';
-import { Octokit } from '@octokit/rest';
 import Projects from '../components/projects/projects';
-import styles from './page.module.scss';
-
-
-async function getRepositories() {
-  try {
-    const octokit = new Octokit({
-      auth: `token ${process.env.GITHUB_ACCESS}`,
-    });
-
-    const { data: repositories } = await octokit.repos.listForAuthenticatedUser();
-
-    return repositories
-
-  } catch (error) {
-    console.log(error);
-
-    return []
-  }
-};
+import fetchData from '../hooks/useFetchRepositories';
+import './page.scss';
 
 async function Home() {
 
-  const repositories = await getRepositories();
-
+  const repositories = await fetchData();
   return (
     <>
       <section id="tree3D" className="py-5">
@@ -39,11 +18,9 @@ async function Home() {
         </div>
       </section>
 
-      <section id={styles.projects} className="py-5">
-        <div className="container px-4">
-
+      <section id="projects" className="py-5">
+        <div className="container custom_container">
           <Projects repositories={repositories} />
-
         </div>
       </section>
     </>

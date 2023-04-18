@@ -4,7 +4,7 @@ import React from 'react'
 // import Image from 'next/image';
 import Link from 'next/link';
 
-import styles from './page.module.scss';
+import './page.scss';
 import ArrowRight from './assets/icons/arrowRight';
 import Heart from './assets/icons/heart';
 import Github from './assets/icons/github';
@@ -14,7 +14,7 @@ import Instagram from './assets/icons/instagram';
 export default function Home() {
   return (
     <>
-      <section id={styles.tree3D} className='py-5'>
+      <section id="tree3D" className='py-5'>
         <div className="container px-4 py-5">
           <div className="row">
             <div className="col text-center">
@@ -24,13 +24,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section id={styles.about} className='py-5'>
+      <section id="about" className='py-5'>
         <div className="container px-4">
           <div className="row">
             <div className="col-8 mx-auto">
 
               {/*   INTRO */}
-              <h3 id='intro' className={styles.bg}>Hello, I'm an indie app developer based in Japan!</h3>
+              <h3 id='intro' className="bg">Hello, I'm an indie app developer based in Japan!</h3>
 
               {/* NAME */}
               <div id='profile' className='d-flex align-items-center justify-content-between mb-5'>
@@ -45,7 +45,7 @@ export default function Home() {
               </div>
 
               {/* WORK */}
-              <div id='work' className={styles.work}>
+              <div id='work' className="work">
                 <h2 className='d-flex flex-column'>Trabalho <span /></h2>
                 <p>
                   Takuya is a freelance and a full-stack developer based in Osaka with a passion for building digital services/stuff he wants. He has a knack for all things launching products, from planning and designing all the way to solving real-life problems with code. When not online, he loves hanging out with his camera. Currently, he is living off of his own product called <Link href="/" title='Inkdrop'>Inkdrop</Link>. He publishes content for marketing his products and his YouTube channel called "Dev as Life" has more than 100k subscribers.
@@ -59,7 +59,7 @@ export default function Home() {
               </div>
 
               {/* BIO */}
-              <div id='bio' className={styles.work}>
+              <div id='bio' className="work">
                 <h2 className='d-flex flex-column'>Bio <span /></h2>
                 <ul>
                   <li className='d-flex'><strong>1984</strong> <p className='mb-1'>Born in Osaka (大阪), Japan.</p> </li>
@@ -70,23 +70,23 @@ export default function Home() {
               </div>
 
               {/* I_LOVE */}
-              <div id='i_love' className={styles.love}>
+              <div id='i_love' className="love">
                 <h2 className='d-flex flex-column'><div className='d-flex align-items-center gap-2'>I <Heart /></div> <span /></h2>
                 <p>Art, Music, <span className='text-secondary'>Drawing</span>, Playing Drums, <span className='text-secondary'>Photography</span>, Leica, Machine Learning</p>
               </div>
 
               {/* SOCIAL */}
-              <div id='social' className={styles.social}>
+              <div id='social' className="social">
                 <h2 className='d-flex flex-column'>Social <span /></h2>
 
                 <ul>
                   <li>
-                    <Link className={styles.hover} href="https://github.com/zDeep10" target="_blank"><Github />@zDeep10 </Link>
+                    <Link className="hover" href="https://github.com/zDeep10" target="_blank"><Github />@zDeep10 </Link>
                   </li>
                   <li className='my-1'>
-                    <Link className={styles.hover} href="https://www.linkedin.com/in/gabrielgontijoa/" target="_blank"><Linkedin />@gabrielgontijoa</Link>
+                    <Link className="hover" href="https://www.linkedin.com/in/gabrielgontijoa/" target="_blank"><Linkedin />@gabrielgontijoa</Link>
                   </li>
-                  <li><Link className={styles.hover} href="https://www.instagram.com/sk_gab/" target="_blank"><Instagram />@sk_gabs</Link></li>
+                  <li><Link className="hover" href="https://www.instagram.com/sk_gab/" target="_blank"><Instagram />@sk_gabs</Link></li>
                 </ul>
 
               </div>
