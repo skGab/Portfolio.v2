@@ -1,9 +1,8 @@
 import { Metadata } from 'next';
 import React from 'react';
-import getRepositories from '@/services/getRepositories';
-import Repositories from '../components/Repositories/repositories';
+import getRepositories from '@/app/services/getRepositories';
+import Repositories from './repositories';
 import './page.scss';
-// import Tree3D from '../components/Tree3D/tree3D';
 
 export const revalidate = 3600;
 

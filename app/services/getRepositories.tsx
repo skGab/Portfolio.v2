@@ -1,13 +1,13 @@
 import { StaticImageData } from 'next/image'
 import { Octokit } from '@octokit/rest'
 import { GetResponseDataTypeFromEndpointMethod } from '@octokit/types'
-import apiImage from '../public/imgs/Untitled.png'
-import icarrosImage from '../public/imgs/icarros_thumb.webp'
-import abcBooksImage from '../public/imgs/abcBooks_thumb.webp'
-import bnsImage from '../public/imgs/bns_thumb.webp'
-import mobiltecImage from '../public/imgs/mobiltec_thumb.webp'
-import coopersImage from '../public/imgs/coopers_thumb.webp'
-import blogNovalarImage from '../public/imgs/blogNovalar_thumb.webp'
+import apiImage from '../../public/imgs/Untitled.png'
+import icarrosImage from '../../public/imgs/icarros_thumb.webp'
+import abcBooksImage from '../../public/imgs/abcBooks_thumb.webp'
+import bnsImage from '../../public/imgs/bns_thumb.webp'
+import mobiltecImage from '../../public/imgs/mobiltec_thumb.webp'
+import coopersImage from '../../public/imgs/coopers_thumb.webp'
+import blogNovalarImage from '../../public/imgs/blogNovalar_thumb.webp'
 
 export type FetchDataResult = GetResponseDataTypeFromEndpointMethod<
     typeof Octokit.prototype.repos.listForAuthenticatedUser

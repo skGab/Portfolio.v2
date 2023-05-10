@@ -21,7 +21,6 @@ export default function Home() {
       <div className="container px-4">
         <div className="row">
           <div className="col-8 mx-auto">
-
             {/*   INTRO */}
             <h3 id='intro' className="bg" data-aos="fade-up" data-aos-duration="1000">Hello, I'm an indie app developer based in Japan!</h3>
 
@@ -81,9 +80,7 @@ export default function Home() {
                 </li>
                 <li><Link className="hover" href="https://www.instagram.com/sk_gab/" target="_blank"><Instagram />@sk_gabs</Link></li>
               </ul>
-
             </section>
-
           </div>
         </div>
       </div>
