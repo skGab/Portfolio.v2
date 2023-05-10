@@ -1,10 +1,21 @@
-// #tree3D {
-//     // background-color: rgba(255, 0, 234, 0.068);
-// }
-
 #about {
+    section {
+        h2 {
+            width: fit-content;
+            font-weight: bold;
+
+            span {
+                height: 5px;
+                width: 100%;
+                border-radius: 50px;
+                background-color: #525252;
+                margin-top: 0.1rem;
+            }
+        }
+    }
+
     .bg {
-        background-color: var(--dark);
+        background-color: #5252523b;
         width: 100%;
         padding: 1rem 0;
         border-radius: 0.5rem;
@@ -15,56 +26,9 @@
     }
 
     .work {
-        margin-bottom: 3rem;
-
-        h2 {
-            width: fit-content;
-            font-weight: bold;
-
-            span {
-                height: 5px;
-                width: 100%;
-                border-radius: 50px;
-                background-color: #20202380;
-                margin-top: 0.1rem;
-            }
-        }
-
         p {
             text-indent: 1rem;
             text-align: justify;
-        }
-    }
-
-    .love {
-        margin-bottom: 3rem;
-
-        h2 {
-            width: fit-content;
-            font-weight: bold;
-
-            span {
-                height: 5px;
-                width: 100%;
-                border-radius: 50px;
-                background-color: #20202380;
-                margin-top: 0.1rem;
-            }
-        }
-    }
-
-    .social {
-        h2 {
-            width: fit-content;
-            font-weight: bold;
-
-            span {
-                height: 5px;
-                width: 100%;
-                border-radius: 50px;
-                background-color: #20202380;
-                margin-top: 0.1rem;
-            }
         }
     }
 
@@ -74,7 +38,7 @@
         width: fit-content;
         display: flex;
         align-items: center;
-        gap: .5rem;
+        gap: 0.5rem;
 
         transition: background 0.2s ease-in;
     }

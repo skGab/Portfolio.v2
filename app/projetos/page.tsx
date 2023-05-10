@@ -1,31 +1,25 @@
+import { Metadata } from 'next';
 import React from 'react';
-import Projects from '../components/projects/projects';
-import fetchData from '../hooks/useFetchRepositories';
+import getRepositories from '@/services/getRepositories';
+import Repositories from '../components/Repositories/repositories';
 import './page.scss';
+// import Tree3D from '../components/Tree3D/tree3D';
 
-async function Home() {
+export const revalidate = 3600;
 
-  const repositories = await fetchData();
-  return (
-    <>
-      <section id="tree3D" className="py-5">
-        <div className="container px-4 py-5">
-          <div className="row">
-            <div className="col text-center">
-              <h1 className="small">Arvore 3d rodando</h1>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" className="py-5">
-        <div className="container custom_container">
-          <Projects repositories={repositories} />
-        </div>
-      </section>
-    </>
-  );
+export const metadata: Metadata = {
+  title: 'Projetos - Gabriel Assunção',
+  description: 'Confira meus projetos, incluindo aplicações web, front-end e back-end.'
 }
 
+export default async function Home() {
+  const repositories = await getRepositories();
 
-export default Home;
+  return (
+    <section id="projects" className="py-5">
+      <div className="container custom_container">
+        <Repositories data={repositories} />
+      </div>
+    </section>
+  );
+}

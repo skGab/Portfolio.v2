@@ -10,9 +10,10 @@ Portfolio being developed with Next.Js, see:#
 [   ] light and dark theme
 [   ] profile picture
 [ x ] projects from github
-[   ] Header animation
-[   ] Switch page animation
+[ x ] Header animation
+[ x ] Switch page animation ('AOS')
+[   ] fix straming loading
 [   ] Bio Content
-[   ] Projects thumbs
+[ x ] Projects thumbs
 ```
 

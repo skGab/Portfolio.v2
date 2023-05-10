@@ -5,9 +5,7 @@ const dotenv = require('dotenv')
 dotenv.config()
 
 const nextConfig = {
-    experimental: {
-        appDir: true,
-    },
+    /* config options here */
 }
 
 module.exports = nextConfig
