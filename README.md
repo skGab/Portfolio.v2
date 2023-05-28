@@ -12,7 +12,7 @@ Portfolio being developed with Next.Js, see:#
 [ x ] projects from github
 [ x ] Header animation
 [ x ] Switch page animation ('AOS')
-[   ] fix straming loading
+[ x ] fix straming loading
 [   ] Bio Content
 [ x ] Projects thumbs
 ```

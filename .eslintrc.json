@@ -1,15 +1,16 @@
 {
+    "rules": {
+        "react/no-unknown-property": "off",
+        "@next/next/no-html-link-for-pages": "off",
+        "no-console": 0
+    },
+    "parserOptions": {
+        "project": ["./tsconfig.json", "./next.config.js"]
+    },
     "extends": [
         "next/core-web-vitals",
         "airbnb",
         "airbnb-typescript",
         "prettier"
-    ],
-    "parserOptions": {
-        "project": ["./tsconfig.json", "./next.config.js"]
-    },
-    "rules": {
-        "@next/next/no-html-link-for-pages": "off",
-        "no-console": 0
-    }
+    ]
 }

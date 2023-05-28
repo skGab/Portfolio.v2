@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <section id="about" className='py-5'>
+    <section id="about" className='pb-4'>
       <div className="container px-4">
         <div className="row">
           <div className="col-8 mx-auto">

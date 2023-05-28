@@ -1,37 +1,39 @@
-"use client"
+import React, { useRef, useState } from 'react'
+import { Canvas, useFrame } from '@react-three/fiber'
+import { OrbitControls, CubeCamera } from '@react-three/drei'
+import { Mesh, Texture } from 'three'
 
-import React, { useRef } from 'react';
-import * as THREE from 'three';
+function Box({ envMap }: { envMap: Texture }) {
+    const [hovered, setHover] = useState(false)
+    const meshRef = useRef<Mesh>(null)
 
-function Cube() {
-    const mesh = useRef<THREE.Mesh | null>(null);
-
+    // Rotate the mesh every frame
     useFrame(() => {
-        if (mesh.current) {
-            mesh.current.rotation.x += 0.01;
-            mesh.current.rotation.y += 0.01;
+        if (meshRef.current) {
+            meshRef.current.rotation.y += 0.005;
         }
-    });
-
+    })
     return (
-        <mesh ref={mesh}>
-            <boxGeometry args={[1, 1, 1]} />
-            <meshBasicMaterial color={0x00ff00} />
+        <mesh
+            ref={meshRef}
+            onPointerOver={() => setHover(true)}
+            onPointerOut={() => setHover(false)}>
+            <boxGeometry args={[1, 1, 2]} />
+            <meshStandardMaterial envMap={envMap} color={hovered ? 'hotpink' : 'orange'} />
         </mesh>
-    );
+    )
 }
 
-export default function Tree3D() {
+export default function Model() {
+    // @ts-nocheck
     return (
-        <Canvas>
-            <perspectiveCamera
-                fov={75}
-                aspect={window.innerWidth / window.innerHeight}
-                near={0.1}
-                far={1000}
-                position={[0, 0, 5]}
-            />
-            <Cube />
+        <Canvas className='canvas' camera={{ position: [2, 2, 1] }}>
+            <ambientLight />
+            <pointLight position={[10, 10, 10]} />
+            <CubeCamera>
+                {(texture) => <Box envMap={texture} />}
+            </CubeCamera>
+            <OrbitControls enablePan={false} />
         </Canvas>
-    );
+    )
 }

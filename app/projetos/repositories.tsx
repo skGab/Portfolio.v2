@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import './repositories.scss';
 import LoadingSkeleton from '../components/LoadingSkeleton/loadingSkeleton';
 
 export type Repository = {
@@ -44,6 +43,7 @@ function Repositories({ data: repositories }: Props) {
 
     return (
         <>
+            {/* WEB APP */}
             <h2 className="d-flex flex-column mb-3" data-aos="fade-up" data-aos-duration="1000">Web App <span /></h2>
             {loading ? (
                 <LoadingSkeleton />
@@ -53,17 +53,19 @@ function Repositories({ data: repositories }: Props) {
 
             <hr className='mt-5 mb-4' />
 
-            <h2 className="d-flex flex-column mb-3" data-aos="fade-up" data-aos-duration="1400">Front-end <span /></h2>
+            {/* FRONT-END */}
+            <h2 className="d-flex flex-column mb-3" data-aos="fade-up" data-aos-duration="1200">Front-end <span /></h2>
             {
                 loading ? (
                     <LoadingSkeleton />
                 ) : (
-                    <ul className='row justify-content-between mb-0' data-aos="fade-up" data-aos-duration="1600">{renderRepositories('front-end')}</ul>
+                    <ul className='row justify-content-between mb-0' data-aos="fade-up" data-aos-duration="1400" data-aos-anchor-placement="top-bottom">{renderRepositories('front-end')}</ul>
                 )
             }
 
             <hr className='mt-5 mb-4' />
 
+            {/* BACK-END */}
             <h2 className="d-flex flex-column mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">Back-end <span /></h2>
             {
                 loading ? (

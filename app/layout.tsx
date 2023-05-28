@@ -5,7 +5,7 @@ import AOS from 'aos'
 import { Nunito } from 'next/font/google';
 import Header from './components/header';
 import Footer from './components/footer';
-// import Tree3D from './components/Tree3D/tree3D';
+import Tree3D from './components/Tree3D/tree3D';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-loading-skeleton/dist/skeleton.css'
@@ -29,11 +29,11 @@ export default function RootLayout({
             <body >
                 <Header />
 
-                <section id="tree3D" className='py-5'>
-                    <div className="container px-4 py-5">
-                        <div className="row">
-                            <div className="col text-center">
-                                {/* <Tree3D /> */}
+                <section id="tree3D">
+                    <div className="container px-4">
+                        <div className="row justify-content-center">
+                            <div className="col-11 text-center">
+                                <Tree3D />
                             </div>
                         </div>
                     </div>

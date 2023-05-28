@@ -82,7 +82,17 @@ body {
         font-size: 1.3rem;
     }
 
+    main{
+        margin-top: -5rem    
+    }
+
     @import './assets/scss/customVariables.scss';
+
+    .canvas {
+        // background-color: red;
+        max-width: 640px;
+        min-height: 340px;
+    }
 }
 
 header {
@@ -100,7 +110,7 @@ header {
         }
 
         .navbar-brand:hover > .hoverTree {
-            transition: all .3s;
+            transition: all 0.3s;
             transform: rotate(-22deg);
         }
 
