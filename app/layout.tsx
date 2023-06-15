@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect } from 'react'
+import React, { Suspense, useEffect } from 'react'
 import AOS from 'aos'
 import { Nunito } from 'next/font/google';
 import Header from './components/header';
@@ -33,7 +33,9 @@ export default function RootLayout({
                     <div className="container px-4">
                         <div className="row justify-content-center">
                             <div className="col-11 text-center">
-                                <Tree3D />
+                                <Suspense fallback='loading'>
+                                    <Tree3D />
+                                </Suspense>
                             </div>
                         </div>
                     </div>
