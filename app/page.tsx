@@ -22,13 +22,13 @@ export default function Home() {
         <div className="row">
           <div className="col-8 mx-auto">
             {/*   INTRO */}
-            <h3 id='intro' className="bg" data-aos="fade-up" data-aos-duration="1000">Hello, I'm an indie app developer based in Japan!</h3>
+            <h3 id='intro' className="bg" data-aos="fade-up" data-aos-duration="1000">Olá, o modelo 3D que você vê representa algo com bastante significado para mim!</h3>
 
             {/* NAME */}
             <section id='profile' className='d-flex align-items-center justify-content-between mb-5' data-aos="fade-up" data-aos-duration="1200">
               <div>
                 <h1 className='fw-bold lh-1'>Gabriel Assunção</h1>
-                <p className='m-0'>Digital Craftsman ( Artist / Developer / Designer )</p>
+                <p className='m-0'>Desenvolvedor Full-Stack ( Next.js / Laravel / Wordpress )</p>
               </div>
 
               <figure>
@@ -39,8 +39,17 @@ export default function Home() {
             {/* WORK */}
             <section id='work' className="work mb-5" data-aos="fade-up" data-aos-duration="1400">
               <h2 className='d-flex flex-column'>Trabalho <span /></h2>
+
               <p>
-                Takuya is a freelance and a full-stack developer based in Osaka with a passion for building digital services/stuff he wants. He has a knack for all things launching products, from planning and designing all the way to solving real-life problems with code. When not online, he loves hanging out with his camera. Currently, he is living off of his own product called <Link href="/" title='Inkdrop'>Inkdrop</Link>. He publishes content for marketing his products and his YouTube channel called "Dev as Life" has more than 100k subscribers.
+                Gabriel é um desenvolvedor full-stack e freelancer baseado em Belo Horizonte, formado como técnico em Desenvolvimento Web e <span className='text-secondary'>lider operacional</span> da equipe de desenvolvimento da Black Beans.
+              </p>
+
+              <p>
+                Ele possui experiência na construção e manutenção de aplicações do lado do front-end e back-end, está atualmente se dedicando a aprofundar seus conhecimentos em arquitetura e performance, sempre com o objetivo de criar aplicações escaláveis e acessíveis.
+              </p>
+
+              <p>
+                Quando não está online, Gabriel ama estar em contato com a <span className='text-secondary'>natureza</span>. Atualmente, ele está entrando no mundo da corrida e gosta tambem de meditação e yoga! Seu objetivo profissional é estar inserido no desenvolvimento de grandes aplicações e serviços.
               </p>
 
               <div className='w-100 text-center'>
@@ -54,17 +63,17 @@ export default function Home() {
             <section id='bio' className="work mb-5" data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
               <h2 className='d-flex flex-column'>Bio <span /></h2>
               <ul>
-                <li className='d-flex'><strong>1984</strong> <p className='mb-1'>Born in Osaka (大阪), Japan.</p> </li>
-                <li className='d-flex' ><strong className="mr-5">2010</strong> <p className='mb-1'>Completed the Master's Program in the Graduate School of Information Science at Nara Institute of Science and Technology (奈良先端科学技術大学院大学情報科学研究科修士課程)</p> </li>
-                <li className='d-flex'><strong className="mr-5">2010</strong> <p className='mb-1'>Worked at Yahoo! Japan (ヤフー株式会社入社)</p> </li>
-                <li className='d-flex'><strong className="mr-5">2012 to present</strong> <p className='mb-1'>Working as a freelancer</p> </li>
+                <li className='d-flex'><strong>1999</strong> <p className='mb-1 ps-3'>Nascido em Três Corações, Minas Gerais.</p> </li>
+                <li className='d-flex' ><strong className="mr-5">2021</strong> <p className='mb-1 ps-3'>Formação Tecnica em Desenvolvimento Web Full-Stack no SENAI - Centro de Treinamento da Tecnologia da Informação</p>
+                </li>
+                <li className='d-flex'><strong className="mr-5">2022 - o momento</strong> <p className='mb-1 ps-3'>Lider operacional na Black Beans</p></li>
               </ul>
             </section>
 
             {/* I_LOVE */}
             <section id='i_love' className="mb-5" data-aos="fade-up" data-aos-duration="1000" >
-              <h2 className='d-flex flex-column'><div className='d-flex align-items-center gap-2'>I <Heart /></div> <span /></h2>
-              <p>Art, Music, <span className='text-secondary'>Drawing</span>, Playing Drums, <span className='text-secondary'>Photography</span>, Leica, Machine Learning</p>
+              <h2 className='d-flex flex-column'><div className='d-flex align-items-center gap-2'>Eu <Heart /></div> <span /></h2>
+              <p><span className='text-secondary'>Acampar</span>, Trilhas, Boxe, Jogos, Fotografia, <span className='text-secondary'>Corrida</span>, Meditação e Yoga</p>
             </section>
 
             {/* SOCIAL */}
