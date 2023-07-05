@@ -22,7 +22,7 @@ export default function Home() {
         <div className="row">
           <div className="col-8 mx-auto">
             {/*   INTRO */}
-            <h3 id='intro' className="bg" data-aos="fade-up" data-aos-duration="1000">Olá, o modelo 3D que você vê representa algo com bastante significado para mim!</h3>
+            {/* <h3 id='intro' className="bg" data-aos="fade-up" data-aos-duration="1000">Olá, o modelo 3D acima representa algo com bastante significado para mim!</h3> */}
 
             {/* NAME */}
             <section id='profile' className='d-flex align-items-center justify-content-between mb-5' data-aos="fade-up" data-aos-duration="1200">
@@ -41,15 +41,12 @@ export default function Home() {
               <h2 className='d-flex flex-column'>Trabalho <span /></h2>
 
               <p>
-                Gabriel é um desenvolvedor full-stack e freelancer baseado em Belo Horizonte, formado como técnico em Desenvolvimento Web e <span className='text-secondary'>lider operacional</span> da equipe de desenvolvimento da Black Beans.
+                Desenvolvedor Full-stack com especialidade de 2 anos em aplicações no lado do <span className='text-secondary'>Front-end</span>, formado como tecnico em Desenvolvimento Web.
+                Atuando hoje como desenvolvedor Full-stack na Black Beans, e tambem atuando em projetos independentes como freelancer.
               </p>
 
               <p>
-                Ele possui experiência na construção e manutenção de aplicações do lado do front-end e back-end, está atualmente se dedicando a aprofundar seus conhecimentos em arquitetura e performance, sempre com o objetivo de criar aplicações escaláveis e acessíveis.
-              </p>
-
-              <p>
-                Quando não está online, Gabriel ama estar em contato com a <span className='text-secondary'>natureza</span>. Atualmente, ele está entrando no mundo da corrida e gosta tambem de meditação e yoga! Seu objetivo profissional é estar inserido no desenvolvimento de grandes aplicações e serviços.
+                Com experiência na construção e manutenção de aplicações do lado do Front-end e Back-end, desde a concepção do produto, análise de layout e prototipagem ate seu desenvolvimento e produção, pensando tambem em <span className='text-secondary'>SEO e arquitetura dos dados</span>, com o objetivo de criar sistemas escaláveis e acessíveis.
               </p>
 
               <div className='w-100 text-center'>
